@@ -1,0 +1,422 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif; }
+
+body {
+  background-color: #F44336; }
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #E53935;
+  z-index: 10;
+  display: flex; }
+  header #headerLeft {
+    position: relative;
+    height: 100%;
+    display: flex; }
+    header #headerLeft h1 {
+      margin: 6px 22px 6px 34px;
+      color: #fff; }
+    header #headerLeft #searchContainer {
+      width: 600px;
+      height: 100%;
+      padding: 7px 0px; }
+      header #headerLeft #searchContainer #searchBox {
+        position: relative;
+        width: 550px;
+        height: 100%; }
+        header #headerLeft #searchContainer #searchBox input {
+          outline: 0;
+          font-size: 13pt;
+          height: 36px;
+          width: 100%;
+          border: 0px;
+          color: #fff;
+          padding: 0px 14px;
+          box-sizing: border-box;
+          background-color: rgba(0, 0, 0, 0.1); }
+      header #headerLeft #searchContainer button {
+        display: none; }
+  header #headerRight {
+    position: relative;
+    height: 100%; }
+
+section {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  padding-top: 50px;
+  box-sizing: border-box; }
+  section #sectionCenter {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    section #sectionCenter .sectionCard {
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      background-color: #fff;
+      display: none; }
+
+#sectionSearch #searchTop {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #E53935;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; }
+  #sectionSearch #searchTop #searchTopLeft {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #sectionSearch #searchTop #searchTopLeft p {
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 13pt; }
+  #sectionSearch #searchTop #searchTopRight {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    color: #fff;
+    font-size: 13pt;
+    text-align: center;
+    padding: 10px 0px;
+    box-sizing: border-box; }
+#sectionSearch #searchContent {
+  position: relative;
+  width: 100%;
+  height: auto; }
+  #sectionSearch #searchContent .searchItemChannel .searchItemTitle + div {
+    margin-top: 8px !important; }
+  #sectionSearch #searchContent .searchItem {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #eee;
+    display: flex; }
+    #sectionSearch #searchContent .searchItem .searchItemLeft {
+      position: relative;
+      height: 100%; }
+      #sectionSearch #searchContent .searchItem .searchItemLeft .itemLive {
+        position: absolute;
+        right: 14px;
+        top: 8px;
+        color: #fff;
+        font-size: 13pt;
+        padding: 2px 8px;
+        border-radius: 5px;
+        border: 1px solid #E53935;
+        background-color: rgba(229, 57, 53, 0.6);
+        cursor: default; }
+        #sectionSearch #searchContent .searchItem .searchItemLeft .itemLive:hover {
+          background-color: #e53935; }
+      #sectionSearch #searchContent .searchItem .searchItemLeft .searchItemPlaylistSvg {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #sectionSearch #searchContent .searchItem .searchItemLeft .searchItemPlaylistSvg svg {
+          width: 38px;
+          height: 38px;
+          fill: #fff; }
+      #sectionSearch #searchContent .searchItem .searchItemLeft .searchItemImg {
+        width: 235px;
+        height: 100%; }
+      #sectionSearch #searchContent .searchItem .searchItemLeft .searchItemChannelImg {
+        width: 120px;
+        margin: 0px 58px;
+        border-radius: 50%; }
+    #sectionSearch #searchContent .searchItem .searchItemCenter {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 14px 40px 14px 22px;
+      box-sizing: border-box;
+      overflow: hidden; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter a {
+        color: #000;
+        text-decoration: none; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemTitle {
+        font-size: 14pt;
+        margin-bottom: 6px; }
+        #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemTitle svg {
+          margin-top: -5px; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemTitle span + a {
+        position: absolute;
+        margin-left: 12px;
+        margin-top: -2px; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemChannel {
+        font-size: 11pt;
+        margin-bottom: 8px; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemDescription {
+        font-size: 11pt;
+        color: #444;
+        height: 16px;
+        overflow: hidden; }
+      #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional {
+        position: relative;
+        height: auto;
+        display: flex; }
+        #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional .searchItemReputation {
+          position: relative;
+          width: 220px;
+          height: 18px;
+          margin-top: 12px;
+          display: flex; }
+          #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional .searchItemReputation .reputationTrackBar {
+            position: relative;
+            width: 140px;
+            height: 5px;
+            margin-top: 6px;
+            background-color: #ddd; }
+            #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional .searchItemReputation .reputationTrackBar .reputationBar {
+              position: relative;
+              height: 100%;
+              background-color: #000; }
+          #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional .searchItemReputation span {
+            position: relative;
+            margin: 1px 12px;
+            font-size: 10pt;
+            color: #444; }
+        #sectionSearch #searchContent .searchItem .searchItemCenter .searchItemAdditional .searchItemDuration {
+          position: relative;
+          width: auto;
+          margin-top: 8px;
+          font-size: 12px;
+          color: #777;
+          padding: 3px;
+          border: 1px solid #ccc;
+          border-radius: 4px; }
+
+#sectionWatch #watchPlayer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #000; }
+  #sectionWatch #watchPlayer #player {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+    #sectionWatch #watchPlayer #player iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+#sectionWatch #watchContent {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex; }
+  #sectionWatch #watchContent #watchContentLeft {
+    position: relative;
+    width: 72%;
+    height: auto; }
+    #sectionWatch #watchContent #watchContentLeft #watchContentTop {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 32px 35px;
+      box-sizing: border-box;
+      transition: background-color 1s; }
+      #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentTitle {
+        font-size: 20pt;
+        margin-bottom: 16px; }
+      #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        font-size: 13pt;
+        justify-content: space-between; }
+        #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes {
+          display: flex; }
+          #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes svg {
+            fill: #555; }
+          #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes p {
+            position: relative;
+            margin: 2px 22px 0px 10px; }
+    #sectionWatch #watchContent #watchContentLeft hr {
+      position: relative;
+      margin: auto;
+      width: 100%;
+      border: 0px;
+      border-bottom: 1px solid #aaa; }
+    #sectionWatch #watchContent #watchContentLeft #watchChannel {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 32px 35px; }
+      #sectionWatch #watchContent #watchContentLeft #watchChannel #watchChannelOver {
+        position: absolute;
+        width: 200px;
+        height: 56px;
+        top: 28px;
+        left: 35px; }
+    #sectionWatch #watchContent #watchContentLeft #watchDescription {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 22px 35px 32px; }
+      #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText {
+        text-align: justify;
+        overflow: hidden;
+        max-height: 250px;
+        transition: max-height 2s; }
+        #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText p {
+          word-wrap: break-word; }
+        #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText p[split-lines] {
+          white-space: pre-wrap; }
+      #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionExpand {
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: #444;
+        padding: 8px 0px;
+        text-align: center;
+        font-size: 13pt;
+        cursor: pointer;
+        display: none; }
+    #sectionWatch #watchContent #watchContentLeft #watchComments {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 22px 35px 32px; }
+      #sectionWatch #watchContent #watchContentLeft #watchComments #commentsLoading {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        height: auto;
+        display: none; }
+        #sectionWatch #watchContent #watchContentLeft #watchComments #commentsLoading p {
+          text-align: center;
+          color: #EF5350; }
+  #sectionWatch #watchContent #watchContentRight {
+    position: relative;
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px; }
+    #sectionWatch #watchContent #watchContentRight #watchContentRightTop {
+      position: relative;
+      width: 100%;
+      height: 70px; }
+    #sectionWatch #watchContent #watchContentRight #watchRelated {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        padding: 0px 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex; }
+        #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedLeft {
+          position: relative;
+          height: 100%; }
+          #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedLeft .relatedImg {
+            position: relative;
+            height: 70px;
+            margin-right: 8px; }
+        #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedRight {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          padding: 14px 40px 14px 22px;
+          box-sizing: border-box;
+          overflow: hidden; }
+          #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedRight p {
+            padding: 5px 0px; }
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg); }
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.sk-folding-cube .sk-cube:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EF5350;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg); }
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg); }
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg); }
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s; }
+
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+::-webkit-input-placeholder {
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

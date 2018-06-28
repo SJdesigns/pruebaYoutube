@@ -1,0 +1,222 @@
+#sectionWatch #watchPlayer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #000; }
+  #sectionWatch #watchPlayer #player {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+    #sectionWatch #watchPlayer #player iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+#sectionWatch #watchContent {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex; }
+  #sectionWatch #watchContent #watchContentLeft {
+    position: relative;
+    width: 72%;
+    height: auto; }
+    #sectionWatch #watchContent #watchContentLeft #watchContentTop {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 32px 35px;
+      box-sizing: border-box;
+      transition: background-color 1s; }
+      #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentTitle {
+        font-size: 20pt;
+        margin-bottom: 16px; }
+      #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        font-size: 13pt;
+        justify-content: space-between; }
+        #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes {
+          display: flex; }
+          #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes svg {
+            fill: #555; }
+          #sectionWatch #watchContent #watchContentLeft #watchContentTop #watchContentSubtitle #watchVotes p {
+            position: relative;
+            margin: 2px 22px 0px 10px; }
+    #sectionWatch #watchContent #watchContentLeft hr {
+      position: relative;
+      margin: auto;
+      width: 100%;
+      border: 0px;
+      border-bottom: 1px solid #aaa; }
+    #sectionWatch #watchContent #watchContentLeft #watchChannel {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 32px 35px; }
+      #sectionWatch #watchContent #watchContentLeft #watchChannel #watchChannelOver {
+        position: absolute;
+        width: 200px;
+        height: 56px;
+        top: 28px;
+        left: 35px; }
+    #sectionWatch #watchContent #watchContentLeft #watchDescription {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 22px 35px 32px; }
+      #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText {
+        text-align: justify;
+        overflow: hidden;
+        max-height: 250px;
+        transition: max-height 2s; }
+        #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText p {
+          word-wrap: break-word; }
+        #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionText p[split-lines] {
+          white-space: pre-wrap; }
+      #sectionWatch #watchContent #watchContentLeft #watchDescription #watchDescriptionExpand {
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: #444;
+        padding: 8px 0px;
+        text-align: center;
+        font-size: 13pt;
+        cursor: pointer;
+        display: none; }
+    #sectionWatch #watchContent #watchContentLeft #watchComments {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 22px 35px 32px; }
+      #sectionWatch #watchContent #watchContentLeft #watchComments #commentsLoading {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        height: auto;
+        display: none; }
+        #sectionWatch #watchContent #watchContentLeft #watchComments #commentsLoading p {
+          text-align: center;
+          color: #EF5350; }
+  #sectionWatch #watchContent #watchContentRight {
+    position: relative;
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px; }
+    #sectionWatch #watchContent #watchContentRight #watchContentRightTop {
+      position: relative;
+      width: 100%;
+      height: 70px; }
+    #sectionWatch #watchContent #watchContentRight #watchRelated {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        padding: 0px 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex; }
+        #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedLeft {
+          position: relative;
+          height: 100%; }
+          #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedLeft .relatedImg {
+            position: relative;
+            height: 70px;
+            margin-right: 8px; }
+        #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedRight {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          padding: 14px 40px 14px 22px;
+          box-sizing: border-box;
+          overflow: hidden; }
+          #sectionWatch #watchContent #watchContentRight #watchRelated .videoRelated .relatedRight p {
+            padding: 5px 0px; }
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg); }
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.sk-folding-cube .sk-cube:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EF5350;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg); }
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg); }
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg); }
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s; }
+
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+
+/*# sourceMappingURL=watch.css.map */

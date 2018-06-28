@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>youtube</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/client.js?onload=init"></script>
+</head>
+<body>
+    <header>
+        <div id="headerLeft">
+            <h1>youtube</h1>
+            <div id="searchContainer">
+                <form action="#">
+                    <div id="searchBox">
+                       <input type="text" id="search" placeholder="búsqueda" autocomplete="off" autofocus />
+                    </div>
+                    <button></button>
+                </form>   
+            </div>
+        </div>
+        <div id="headerRight"></div>
+    </header>
+    <section>
+        <div id="sectionCenter">
+            <div class="sectionCard" id="sectionSearch">
+                <div id="searchTop">
+                    <div id="searchTopLeft">
+                        <p>Mostrando <span id="resultsPage"></span> resultados de un total de <span id="resultsTotal"></span></p>
+                    </div>
+                    <div id="searchTopRight">Filtrar</div>
+                </div>
+                <div id="searchContent"></div>
+            </div>
+            <div class="sectionCard" id="sectionWatch">
+                <div id="watchPlayer">
+                    <div id="player">
+                    </div>
+                </div>
+                <div id="watchContent">
+                    <div id="watchContentLeft">
+                        <div id="watchContentTop">
+                            <p id="watchContentTitle"></p>
+                            <div id="watchContentSubtitle">
+                                <div id="watchViews"></div>
+                                <div id="watchVotes">
+                                    <div id="watchVotesLike"></div>
+                                    <div id="watchVotesDislike"></div>
+                                </div>
+                                <div id="watchOptions"></div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div id="watchChannel"></div>
+                        <div id="watchDescription">
+                            <div id="watchDescriptionText"></div>
+                            <div id="watchDescriptionExpand">
+                                <p>Mostrar Más</p>
+                            </div>
+                        </div>
+                        <div id="watchComments">
+                            <div id="commentsLoading">
+                                <div id="commentsSpinner" class="sk-folding-cube">
+                                  <div class="sk-cube1 sk-cube"></div>
+                                  <div class="sk-cube2 sk-cube"></div>
+                                  <div class="sk-cube4 sk-cube"></div>
+                                  <div class="sk-cube3 sk-cube"></div>
+                                </div>
+                                <p>Cargando...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="watchContentRight">
+                        <div id="watchContentRightTop"></div>
+                        <div id="watchRelated"></div>
+                    </div>
+                </div>
+                <div id="watchFloatPlayer"></div>
+            </div>
+            <div class="sectionCard" id="sectionChannel">
+            </div>
+            <div class="sectionCard" id="sectionPlaylist">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
