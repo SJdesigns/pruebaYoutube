@@ -276,7 +276,7 @@ function watchRelated(v) {
 // -------------------------------------------------------
 
 function init() {
-    gapi.client.setApiKey("AIzaSyDQgJCPKdxIrWBfeTGneb22U1tCfHw-KT0");
+    gapi.client.setApiKey("---- add your API key ---- ");
     gapi.client.load("youtube", "v3", function() {
         // yt api is ready
         console.log('API ready');
