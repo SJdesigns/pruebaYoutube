@@ -276,12 +276,23 @@ function watchRelated(v) {
 // -------------------------------------------------------
 
 function init() {
-    gapi.client.setApiKey("---- add your API key ---- ");
+	if (localStorage.getItem('apikey')!=null) {
+		var mykey = localStorage.getItem('apikey');
+		gapi.client.setApiKey(mykey);
+		gapi.client.load("youtube", "v3", function() {
+		// yt api is ready
+		console.log('API ready');
+		apiready=true;
+		});
+		} else {
+			console.log('es necesaria una api key');
+		}
+    /*gapi.client.setApiKey("---- add your API key ---- ");
     gapi.client.load("youtube", "v3", function() {
         // yt api is ready
         console.log('API ready');
         apiready=true;
-    });
+    });*/
 }
 
 function relativeDate(date,recent) {
